@@ -7,9 +7,10 @@ COPY source /source
 COPY static /static
 COPY LICENSE /LICENSE
 COPY main.py /main.py
+COPY settings.json /settings.json
 COPY requirements.txt /requirements.txt
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 
 EXPOSE 8000
 

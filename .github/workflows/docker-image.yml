@@ -33,7 +33,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/xhs-downloader:${{ github.event.release.tag_name }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/xhs-downloader:latest
 
       - name: Post build notifications
         run: echo "Docker image has been built and pushed successfully"
