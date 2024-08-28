@@ -2,7 +2,6 @@ FROM python:3.12.4-slim
 
 LABEL name="XHS-Downloader" version="2.2 Beta" authors="JoeanAmier"
 ENV TZ Asia/Shanghai
-ENV PYTHONUTF8 1
 
 WORKDIR /app
 COPY . /app
